@@ -111,13 +111,12 @@ binary_sensor:
 #    filters:
 #      - delayed_on: 50ms
     device_class: occupancy
-    on_press:
-      then:
-        - light.turn_on: led
-    on_release:
-      then:
-        - light.turn_off: led
-
+#    on_press:
+#      then:
+#        - light.turn_on: led
+#    on_release:
+#      then:
+#        - light.turn_off: led
 
   - platform: template
     name: "Occupancy"
